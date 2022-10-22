@@ -1,0 +1,104 @@
+header div .logo {
+    display: flex;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+header .logo img {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+header .invisiblebttn {
+    display: none;
+    position: absolute;
+    height: 50px;
+    width: 40px;
+    right: 100px;
+}
+header .hamburger {
+    overflow: hidden;
+    display: none;
+}
+header .hamburger:focus ~ .invisiblebttn {
+    display: block;
+}
+header .hamburger:focus ~ nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    max-height: 600px;
+    transition: all 1s;
+    top: 50px;
+}
+header .hamburger ul {
+    flex-direction: column;
+    max-height: 600px;
+    align-items: flex-end;
+    padding-right: 20px;
+    width: 150px;
+    position: relative;
+    right: 100px;
+    background-color:#ffff;
+}
+header .hamburger span {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 4px;
+    width: 40px;
+    margin: 10px auto;
+    background-color: var(--main-dark);
+    transform: rotateZ(0deg);
+    transition: top 0.3s 0.15s, transform  0.3s 0s, left 0.3s;
+}
+header .hamburger:focus span:nth-child(1) {
+    top: 14px;
+    transform: rotateZ(45deg);
+    transition: top 0.3s 0s, transform 0.3s 0.15s;
+}
+header .hamburger:focus span:nth-child(2) {
+    left: 150%;
+}
+header .hamburger:focus span:nth-child(3) {
+    top: -14px;
+    transform: rotateZ(-45deg);
+    transition: top 0.3s 0s, transform 0.3s 0.15s;
+}
+@media screen and (max-width: 900px) {
+    header .hamburger {
+        display: block;
+        position: absolute;
+        right: 100px;
+    } 
+}
+header nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    max-height: 70px;
+}
+header nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--gold);
+    padding: 10px;
+    font-size: 1.2rem;
+}
+header nav ul li a:hover {
+    color: var(--main-dark);
+}
+@media screen and (max-width: 900px) {
+    header nav {
+        overflow: hidden;
+        display: none;
+        max-height: 0px;
+        transition: all 1s;
+    }
+}

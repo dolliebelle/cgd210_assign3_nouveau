@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!------------------------------Google Fonts-------------------------------------->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Long+Cang&family=Montserrat:wght@200;300;400;600&display=swap" rel="stylesheet">
+     <!------------------------------Style Sheets-------------------------------------->
+     <link type="text/css" rel="stylesheet" href="css/styles.css"/>
+     <link type="text/css" rel="stylesheet" href="css/header.css"/>
+     <link type="text/css" rel="stylesheet" href="css/footer.css"/>
+     <link type="text/css" rel="stylesheet" href="css/reserve.css"/>
+ </head>
+ <body>
+     <header>
+         <div class="logo"><a href="index.html">
+             <img src="images/NR_gold_v2.png"></a>
+         </div>
+         <div tabindex="1" class="hamburger">
+             <span></span>
+             <span></span>
+             <span></span>
+         </div>
+         <div class="invisiblebttn"></div>
+         <nav>
+             <ul class="info">
+                 <li><a href="#">Accommodation</a></li>
+                 <li><a href="#">Experiences</a></li>
+                 <li><a href="#">Events</a></li>
+             </ul>
+             <ul class="contact">
+                 <li><a href="reserve.html">Reserve</a></li>
+                 <li><a href="destination.html">Your Destination</a></li>
+             </ul>
+         </nav>
+     </header>
+     <main>
+        <h1>Nouveau Camiguin</h1>
+        <p>your vacation begins now</p>
+        <div class="name">
+            <form action="index.html">
+                <input type="text" placeholder="Full Name"/>
+                <input type="email" placeholder="Email"/>
+            </form>
+        </div>
+        <div class="calendar">
+            <div class="calendar1">
+                <h2>Check-in</h2> 
+                <form action="handleappointments.js">
+                <input name="date" type="date"/>
+                </form>
+            </div>   
+            <div class="calendar2"> 
+                <h2>Check-out</h2> 
+                <form action="handleappointments.js">
+                <input name="date" type="date"/>
+                </form>
+            </div>
+            <div class="submit"> 
+                <form action="handleappointments.js">
+                <input type="submit"/>  
+                </form>
+            </div>                          
+        </div>
+     </main> 
+     <footer>
+        <div>
+            <ul class="menu">
+                <li><a href="#">Accommodation</a></li>
+                <li><a href="#">Experiences</a></li>
+                <li><a href="#">Events</a></li>
+            </ul>
+            <ul class="contact">
+                <li><a href="reserve.html">Reserve</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="destination.html">Your Destination</a></li>
+            </ul>
+            <ul class="socialmedia">
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">YouTube</a></li>
+            </ul>
+        </div>
+        <p>&copy:2022 Nouveau Properties Incorporated</p>
+    </footer>
+</body>
+</html>

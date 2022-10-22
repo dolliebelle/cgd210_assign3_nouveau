@@ -1,0 +1,22 @@
+footer {
+  color: white;
+  padding: 20px;
+  text-align: left;
+  background-color: var(--secondary-color);
+}
+footer div {
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+footer ul {
+  list-style-type: none;
+}
+footer ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+footer p {
+  text-align: center;
+  padding: 20px;
+}/*# sourceMappingURL=footer.css.map */

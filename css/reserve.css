@@ -1,0 +1,68 @@
+main {
+  padding: 50px;
+}
+main h1 {
+  color: var(--secondary-color);
+  font-size: 3rem;
+  text-align: center;
+  padding: 30px;
+}
+main p {
+  font-size: 2rem;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 30px;
+  color: var(--gold);
+}
+main .name {
+  padding: 20px;
+  display: grid;
+  justify-items: center;
+}
+main .name form input {
+  width: 300px;
+  font-size: 1.5rem;
+  padding: 5px;
+  margin: 5px auto;
+  border: none;
+  background-color: var(--main light);
+}
+main .name form input:hover {
+  background-color: var(--secondary-color);
+  color: #000;
+}
+main .name form input:active {
+  background-color: var(--gold);
+  color: #000;
+}
+main .calendar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+main .calendar h2 {
+  color: var(--main-dark);
+  text-align: center;
+}
+main .calendar input {
+  width: 350px;
+  font-size: 1.5rem;
+  padding: 5px;
+  margin: 5px auto;
+  border-radius: 10px;
+  border: 2px solid var(--secondary-color);
+  background-color: var(--main light);
+}
+main .submit {
+  font-size: 2rem;
+  padding: 40px;
+  position: relative;
+  left: 50%;
+}
+main .submit input {
+  border-radius: 10px;
+}
+main .submit input:hover {
+  background-color: var(--gold);
+  color: #000;
+}/*# sourceMappingURL=reserve.css.map */

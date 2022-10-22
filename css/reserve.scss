@@ -1,0 +1,70 @@
+main {
+  padding: 50px;
+  h1 {
+    color: var(--secondary-color);
+    font-size: 3rem;
+    text-align: center;
+    padding: 30px;
+  }
+  p {
+    font-size: 2rem;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 30px;
+    color: var(--gold);
+  }
+  .name {
+    padding: 20px;
+    display: grid;
+    justify-items: center;
+    form {
+      input {
+        width: 300px;
+        font-size: 1.5rem;
+        padding: 5px;
+        margin: 5px auto;
+        border: none;
+        background-color: var(--main light);
+        &:hover {
+          background-color: var(--secondary-color);
+          color: #000;
+        }
+        &:active {
+          background-color: var(--gold);
+          color: #000;
+        }
+      }
+    }
+  }
+  .calendar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    h2 {
+      color: var(--main-dark);
+      text-align: center;
+    }
+    input {
+      width: 350px;
+      font-size: 1.5rem;
+      padding: 5px;
+      margin: 5px auto;
+      border-radius: 10px;
+      border: 2px solid var(--secondary-color);
+      background-color: var(--main light);
+    }
+  }
+  .submit {
+    font-size: 2rem;
+    padding: 40px;
+    position: relative;
+    left: 50%;
+    input {
+      border-radius: 10px;
+      &:hover {
+        background-color: var(--gold);
+        color: #000;
+      }
+    }
+  }
+}
